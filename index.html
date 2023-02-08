@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Popson Web Page</title>
+  </head>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Poppins"
+  />
+
+  <body>
+    <!-- Navbar -->
+    <nav class="relative container font-bold mx-auto p-6">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2 hover:text-brightRed font-bold text-darkGrayishBlue">
+          <img src="img/img-5.svg" alt="" />
+          <text>popson.co</text>
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex">
+          <a href="#" class="hover:text-darkGrayishBlue">Products</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Features</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About us</a>
+        </div>
+        <!-- Button -->
+        <a
+          href="#"
+          class="hidden md:block p-3 px-6 pt-2 text-white bg-darkBlue rounded-full baseline hover:bg-veryDarkBlue md:block"
+          >Sign in/ Sign up</a
+        >
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#" class="hover:text-darkGrayishBlue">Products</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Features</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Form and Img Section -->
+    <section class="bg-veryLightGray">
+      <br />
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+      >
+        <!-- Left item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-3xl font-bold text-center md:text-4xl md:text-left"
+          >
+            Reach to us
+          </h1>
+          <p class="max-w-sm text-center text-brightRed md:text-left">
+            Send us your query, we are happy to answer you
+          </p>
+          <div class="container">
+            <form>
+              <select>
+                <option selected="selected">Select Topic</option>
+                <option value="">ABC</option>
+                <option value="">XYZ</option>
+                <option value="">MNO</option>
+              </select>
+              <input
+                type="text"
+                name="compname"
+                placeholder="Company Name"
+              /><br /><br />
+              <input type="text" name="fullname" placeholder="Full Name" />
+              <input
+                type="email"
+                name="emailID"
+                placeholder="Email"
+              /><br /><br />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+              /><br /><br />
+              <textarea name="message" placeholder="Your Message"></textarea>
+              <input
+                type="submit"
+                value="Submit"
+                class="hidden md:block p-3 px-6 pt-2 text-white bg-darkBlue rounded-full baseline hover:bg-veryDarkBlue md:block"
+              />
+            </form>
+          </div>
+        </div>
+        <!-- Right item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <img src="img/img-1.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Horizontal List -->
+    <section id="horizontallist">
+      <!-- Container to heading and testm blocks -->
+      <div class="max-w-6xl px-5 mx-auto text-center">
+        <!-- Horizontal Container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!-- Scooter -->
+          <div class="flex flex-col items-center p-6 md:w-1/3">
+            <img src="img/img-4.svg" alt="" />
+          </div>
+
+          <!-- Office Address -->
+          <div class="hidden flex-col items-center p-6 md:flex md:w-1/3">
+            <h3 class="text-4xl">Our Office</h3>
+            <br /><br />
+            <p class="text-sm">
+              Sect No 10, Plot No 02, S07, 2nd Floor, Basweshar Industrial
+              Complex PCNTDA, VIP Chowk, Bhosari, Pune, Maharashtra,
+              India-411026
+            </p>
+          </div>
+
+          <!-- Marker -->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg md:flex md:w-1/3"
+          >
+            <img src="img/img-3.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Email Contact no-->
+    <hr
+      class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"
+    />
+    <section class="bg-gray-900">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between px-2 py-24 mx-auto space-y-12 md:flex-row md:space-y-0"
+      >
+        <div class="max-w-6xl px-5 mx-auto text-center">
+          <div
+            class="hidden flex-row p-1 space-x-6 space-x-reverse md:flex md:w-0/1"
+          >
+            <img src="img/mail-svgrepo-com.svg" class="w-16 mt-24 alt=" />
+            <div class="hidden flex-col items-start p-1 mt-24 md:flex md:w-0/1">
+              <p class="text-sm">Email us at</p>
+              <p class="text-sm font-bold">info@consoleinfotech.com</p>
+            </div>
+            <img src="img/call-svgrepo-com.svg" class="w-16 mt-24 alt=" />
+            <div class="hidden flex-col items-start p-1 mt-24 md:flex md:w-0/1">
+              <p class="text-sm">Call us at</p>
+              <p class="text-sm font-bold">+91 928 439 1676</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Talk to expert -->
+    <section id="expert" class="bg-darkBlue">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <!-- Heading -->
+        <div>
+          <h2
+            class="text-5xl text-center text-white md:text-4xl md:max-w-xl md:text-left"
+          >
+            Ready to get started?
+          </h2>
+          <br />
+          <p class="max-w-sm text-center text-veryPaleRed">
+            This is dummy text for quick attraction. This is dummy text for
+            quick attraction.
+          </p>
+        </div>
+
+        <!-- Button -->
+        <div>
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-veryDarkBlue rounded-full shadow-2xl baseline hover:bg-gray-700"
+            >Talk to an expert</a
+          >
+        </div>
+        <div>
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-veryDarkBlue rounded-full shadow-2xl baseline hover:bg-gray-700"
+            >Create an account</a
+          >
+        </div>
+      </div>
+      <hr class="h-px my-8 bg-gray-900 border-0 dark:bg-gray-900" />
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkBlue">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-3 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and social links container -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed font-bold text-darkGrayishBlue">PRODUCTS</a>
+            <a href="#" class="hover:text-brightRed">Cloud Compute</a>
+            <a href="#" class="hover:text-brightRed">Dedicated Cloud</a>
+            <a href="#" class="hover:text-brightRed">Load Balancer</a>
+            <a href="#" class="hover:text-brightRed">Kubernates</a>
+            <a href="#" class="hover:text-brightRed">Auto Scalling</a>
+            <a href="#" class="hover:text-brightRed">Block Storage</a>
+            <a href="#" class="hover:text-brightRed">Auto Backup</a>
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed font-bold text-darkGrayishBlue">COMPANY</a>
+            <a href="#" class="hover:text-brightRed">About Us</a>
+            <a href="#" class="hover:text-brightRed">Leadership Team</a>
+            <a href="#" class="hover:text-brightRed">Referral Program</a>
+            <a href="#" class="hover:text-brightRed">Career</a>
+            <a href="#" class="hover:text-brightRed">Blog</a>
+            <a href="#" class="hover:text-brightRed">SLA</a>
+          </div>
+        </div>
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed"></a>
+            <a href="#" class="hover:text-brightRed"></a>
+            <a href="#" class="hover:text-brightRed"></a>
+            <a href="#" class="hover:text-brightRed">Solutions</a>
+            <a href="#" class="hover:text-brightRed">Pricing</a>
+            <a href="#" class="hover:text-brightRed">Resources</a>
+            <a href="#" class="hover:text-brightRed">FAQ</a>
+            <a href="#" class="hover:text-brightRed">Popson Docs</a>
+            <a href="#" class="hover:text-brightRed">API</a>
+          </div>
+        </div>
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed"></a>
+            <a href="#" class="hover:text-brightRed"></a>
+            <a href="#" class="hover:text-brightRed"></a>
+            <a href="#" class="hover:text-brightRed">Sales</a>
+            <a href="#" class="hover:text-brightRed">Support</a>
+            <a href="#" class="hover:text-brightRed">Report Abuse</a>
+          </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="flex flex-row justify-between space-x-6">
+          <img src="img/instagram-round-svgrepo-com.svg" class="w-16 mt-24 alt=" />
+          <img src="img/youtube-round-svgrepo-com.svg" class="w-16 mt-24 alt=" />
+          <img src="img/twitter-round-svgrepo-com.svg" class="w-16 mt-24 alt=" />
+          <img src="img/facebook-round-svgrepo-com.svg" class="w-16 mt-24 alt=" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Horizontal white line-->
+    <hr
+      class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"
+    />
+    <section class="bg-darkBlue">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between px-2 py-8 mx-auto space-y-12 md:flex-row md:space-y-0"
+      >
+        <a href="#" class="text-white hover:text-white"
+          >Privacy Policy | Terms & Conditions | Cookies Policy</a
+        >
+        <a href="#" class="text-white hover:text-white"
+          >@ 2022 ConsoleInfotech.All rights reserved.</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
